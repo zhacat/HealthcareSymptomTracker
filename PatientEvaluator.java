@@ -64,7 +64,11 @@ public class PatientEvaluator {
             ArrayList<String> symptoms = parseList(scan.nextLine().split(": ")[1]);
             
             // Split the line after the colon and space for the medical history
-            ArrayList<String> history = parseList(scan.nextLine().split(": ")[1]);
+            String[] historyParts = scan.nextLine().split(": ");
+            ArrayList<String> history = new ArrayList<>();
+            if (historyParts.length >= 2 && !historyParts[1].isBlank()) {
+                history = parseList(historyParts[1]);
+            }
             
             // Evaluate the Patient's risk score
             int score = new Patient(name, temp, symptoms, history).calculateRisk();

@@ -17,7 +17,7 @@ class Patient {
     // Patient's medical history
     protected ArrayList<String> history;
 
-    // Risk score for the patient (optional; may be recalculated)
+    // Risk score for the patient
     protected int score;
 
     /**
