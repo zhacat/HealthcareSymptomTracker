@@ -18,3 +18,6 @@ History: [_(optional) MEDICAL HISTORY (String separated by commas)_]<br>
 - Based on the risk scores, the patients are reordered using selection sort. The higher the risk score, the more critical their condition is considered, and the higher up they will be on the output file.<br>
 - If a patient's score is **above 6**, they are considered a HighRiskPatient, a subclass of the Patient class, which will be indicated on the output file.<br>
 - The resulting list of patients/high risk patients and their risk scores are written on the output file which will be created at the designated location on the user's desktop.
+
+### Other information
+The launch.json file makes sure that the java files are all compiled together to avoid errors.
