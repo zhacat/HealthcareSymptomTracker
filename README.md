@@ -12,6 +12,7 @@ Gender: [_GENDER (int)_]<br>
 Temperature (°C): [_TEMPERATURE (double)_]<br>
 Symptoms: [_SYMPTOMS (Strings separated by commas)_]<br>
 History: [_(optional) MEDICAL HISTORY (String separated by commas)_]<br>
+[_Line break_]
 
 ## How it works
 - Based on the patient's temperature, symptoms, and medical history, they are given a "risk score".<br>
